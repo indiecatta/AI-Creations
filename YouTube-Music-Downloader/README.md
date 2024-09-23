@@ -1,6 +1,6 @@
-# YouTube Music Downloader Automation
+# YouTube Music Downloader
 
-This Python-based script automates downloading multiple songs from YouTube and converts them into high-quality **M4A** files. You can feed the script an entire list of song titles, and it will automatically find the videos on YouTube, download them, and convert them for you. The script also uses multithreading to handle multiple downloads simultaneously while ensuring that system resources (CPU and RAM) are not overwhelmed.
+This Python-based script automates downloading multiple songs from YouTube and converts them into **M4A** files. You can feed the script an entire list of song titles, and it will automatically find the videos on YouTube, download them, and convert them for you. The script also uses multithreading to handle multiple downloads simultaneously while ensuring that system resources (CPU and RAM) are not overwhelmed.
 
 ## Features
 
