@@ -19,6 +19,16 @@ An automated script that installs and configures **Elasticsearch** and **Kibana*
   curl -sL https://raw.githubusercontent.com/indiecatta/AI-Creations/refs/heads/main/ELK-Docker-Automation/install_elasticsearch_kibana_docker.sh | tr -d '\r' | sudo bash
   ```
 
+### 2. YouTube Music Downloader Automation
+
+This Python-based script allows you to automate downloading multiple songs from YouTube, converting them into **M4A** files. The script can handle a full list of song titles and download multiple tracks in parallel while optimizing for system resources (CPU and RAM). It's ideal for building or updating a music library quickly.
+
+- **Features**:
+  - **YouTube Search Automation**: Automatically searches YouTube for song titles you provide.
+  - **M4A File Downloads**: Downloads and converts videos to M4A format using an online converter.
+  - **Multithreaded**: Supports downloading multiple songs in parallel.
+  - **System Resource Monitoring**: Ensures the script doesn't overload your system by checking CPU and RAM usage.
+
 ---
 
 ## Disclaimer
