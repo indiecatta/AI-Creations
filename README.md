@@ -1,6 +1,6 @@
 # AI Creations
 
-**AI Creations** is a collection of AI-assisted projects and automation scripts designed to make complex tasks easier. Each project in this repository was built in collaboration with an AI, and tested to ensure it works correctly. However, no guarantees are provided about the functionality, and there may be edge cases that could cause issues.
+**AI Creations** is a collection of AI-assisted projects and scripts designed to make complex tasks easier. Each project in this repository was built in collaboration with an AI, and tested to ensure it works correctly. However, no guarantees are provided about the functionality, and there may be edge cases that could cause issues.
 
 ## Projects in this Repository
 
@@ -19,7 +19,7 @@ An automated script that installs and configures **Elasticsearch** and **Kibana*
   curl -sL https://raw.githubusercontent.com/indiecatta/AI-Creations/refs/heads/main/ELK-Docker-Automation/install_elasticsearch_kibana_docker.sh | tr -d '\r' | sudo bash
   ```
 
-### 2. YouTube Music Downloader Automation
+### 2. [YouTube Music Downloader](./YouTube-Music-Downloader/README.md)
 
 This Python-based script allows you to automate downloading multiple songs from YouTube, converting them into **M4A** files. The script can handle a full list of song titles and download multiple tracks in parallel while optimizing for system resources (CPU and RAM). It's ideal for building or updating a music library quickly.
 
