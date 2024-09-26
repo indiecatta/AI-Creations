@@ -117,6 +117,7 @@ services:
         soft: -1
         hard: -1
     mem_limit: ${ELASTIC_HEAP_MB}m
+    restart: always
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.24
@@ -130,12 +131,24 @@ services:
     depends_on:
       - elasticsearch
     mem_limit: ${KIBANA_HEAP_MB}m
+    restart: always
 
 volumes:
   elasticsearch_data:
 EOF
 
-echo_info "docker-compose.yml created with dynamic heap sizes."
+echo_info "docker-compose.yml created with dynamic heap sizes and automatic restart."
+
+# If containers are already running, update them with automatic restart policy
+if [ "$(docker ps -q -f name=elasticsearch)" ]; then
+    echo_info "Updating Elasticsearch container with restart policy..."
+    docker update --restart=always elasticsearch
+fi
+
+if [ "$(docker ps -q -f name=kibana)" ]; then
+    echo_info "Updating Kibana container with restart policy..."
+    docker update --restart=always kibana
+fi
 
 # Start the services using Docker Compose
 echo_info "Starting Elasticsearch and Kibana with Docker Compose..."
